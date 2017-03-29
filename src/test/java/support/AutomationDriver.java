@@ -1,4 +1,6 @@
-package step_definitions;
+package support;
+
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,13 +18,14 @@ public class AutomationDriver {
 			swdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			return swdriver;
 		} else {
-			return null;
+			return swdriver;
 		}
 	}
 
 	public static void clear_status(){
 		System.out.println("Closing browser...");
 			swdriver.close();
+			swdriver = null;
 		}
 
 		public static void open_url (String url){

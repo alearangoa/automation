@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import step_definitions.AutomationDriver;
+import support.AutomationDriver;
 
 import java.util.List;
 

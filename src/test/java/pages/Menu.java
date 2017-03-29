@@ -3,7 +3,7 @@ package pages;
 import locators.Locators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import step_definitions.AutomationDriver;
+import support.AutomationDriver;
 
 public class Menu {
 	
@@ -43,6 +43,11 @@ public class Menu {
 
 	//Open menu
 	public static void openMenu (){
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		menuIcon.click();
 
 	}
